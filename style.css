@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--transparentWhite);
+    background-color: var(--lightGray);
+    padding: 1.8rem;
+}
+
+h2 {
+    color: var(--lightGray);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.75rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 4rem;
+    letter-spacing: 0.10rem;
+}
+
+img {
+    margin-bottom: 1.75rem;
+}
+
+:root {
+    --brightorange: hsl(31, 77%, 52%);
+    --darkCyan: hsl(184, 100%, 22%);
+    --veryDarkCyan: hsl(179, 100%, 13%);
+    --transparentWhite: hsla(0, 0%, 100%, 0.75);
+    --lightGray: hsl(0, 0%, 95%);
+    --white: hsl(0, 0%, 100%);
+    --gray: hsl(0, 0%, 95%);
+}
+
+.card {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    max-width: 60rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.card a {
+    display: block;
+    color: var(--lightGray);
+    padding: 0.75rem;
+    text-align: center;
+    border-radius: 2rem;
+    transition: background-color 200ms ease;
+    border: 2px solid var(--lightGray);
+    width: 8rem;
+}
+
+.card .sedans a:hover {
+    background-color: var(--lightGray);
+    color: var(--brightorange);
+}
+
+.card .suvs a:hover {
+    background-color: var(--lightGray);
+    color: var(--darkCyan);
+}
+
+.card .luxury a:hover {
+    background-color: var(--lightGray);
+    color: var(--veryDarkCyan);
+}
+
+.card div {
+    padding: 3rem;
+}
+
+.sedans {
+    background-color: var(--brightorange);
+}
+
+.suvs {
+    background-color: var(--darkCyan);
+}
+
+.luxury {
+    background-color: var(--veryDarkCyan);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--veryDarkCyan);
+    margin-top: 0.4rem;
+}
+
+.attribution a {
+    color: var(--darkCyan);
+}
